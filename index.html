@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏀 Basketball Scoreboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="home_div">
+          <h1>Home</h1>
+          <p id="home">0</p>
+          <button class="home_btn" onclick="homeScore_one()">+1</button>
+          <button class="home_btn" onclick="homeScore_two()">+2</button>
+          <button class="home_btn" onclick="homeScore_three()">+3</button>
+          <hr />
+          <h1>Fouls</h1>
+          <p id="home_fouls">0</p>
+          <button id="h_fouls_btn" onclick="homeFouls_btn()">+1</button>
+        </div>
+
+        <div class="preiod_div">
+          <h1 id="timer">00:00</h1>
+
+          <h2 id="period_text">Period</h2>
+          <p id="preiod">0</p>
+          <button id="start_btn">Start</button>
+          <button id="pause_btn">Pause</button>
+          <button id="resume_btn">Resume</button>
+          <button id="save_btn" onclick="saveFunction()">Save</button>
+          <button id="reset_btn">Reset</button>
+        </div>
+
+        <div class="guest_div">
+          <h1>Guest</h1>
+          <p id="guest">0</p>
+          <button class="guest_btn" onclick="guestScore_one()">+1</button>
+          <button class="guest_btn" onclick="guestScore_two()">+2</button>
+          <button class="guest_btn" onclick="guestScore_three()">+3</button>
+          <hr />
+          <h1>Fouls</h1>
+          <p id="guest_fouls">0</p>
+          <button id="g_fouls_btn" onclick="guestFouls_btn()">+1</button>
+        </div>
+      </div>
+
+      <div class="section_two">
+        <div class="Score_div"><p id="home_score">Home Score: </p></div>
+        <div class="Score_div"><p id="guest_score">Guest Score: </p></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
